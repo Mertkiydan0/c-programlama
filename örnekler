@@ -49,3 +49,92 @@ printf("isminiz : %s\n yasiniz %d\n boyunuz da %f.2",isim,yas,boy);
 	return 0;
 }
 
+örnek-3 = verilen iki sayıyı toplama
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	
+	int sayi1 = 5 ,sayi2 = 19;
+	int toplam;
+	toplam = sayi1+sayi2;
+	
+	printf("%d",toplam);
+}
+
+örnek-4 = verilen iki sayiyi çıkarma
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	
+	int sayi1 = 5 ,sayi2 = 19;
+	int fark;
+	fark = sayi1-sayi2;
+	
+	printf("%d",fark);
+}
+
+örnek-5 = verilen iki sayıyı çarpma 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	
+	int sayi1 = 5 ,sayi2 = 19;
+	int carpim;
+	carpim = sayi1*sayi2;
+	
+	printf("%d",carpim);
+}
+
+örnek-6 = verilen iki sayiyi bölme 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	
+	int sayi1 = 5 ,sayi2 = 19;
+	int bolum;
+	bolum = sayi1/sayi2;
+	
+	printf("%d",bolum);
+}
+!!! EĞER DEĞER YANLIŞ ÇIKIYORSA VERİ DÖNÜŞÜMÜ YAPARAK TEKRAR DENEYEBİLİRSİNİZ
+
+ÖRNEK :
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	
+	int sayi1 = 5 ,sayi2 = 19;
+	float bolum;
+	bolum = (float)sayi1/(float)sayi2;
+	
+	printf("%f",bolum);
+}
+
+örnek-7 = verilen iki sayinin modunu alma 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	
+	int sayi1 = 5 ,sayi2 = 19;
+	int mod;
+	mod = sayi1%sayi2;
+	
+	printf("%d",mod);
+}
+
+örnek-8 = kullanıcıdan isteyeceğiniz iki sayıyı toplayınız
+
+
+
