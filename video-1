@@ -1,0 +1,218 @@
+/*1-Algoritmaya Giriş
+
+Bir işin hangi etaplardan geçilerek yapılacağını belirleyen adımlar bütünüdür.
+
+Algoritma bir programlama dili değildir.
+
+Bir işi gerçekleştirirken işi adım adım sıraya koymaya algoritma denir.
+
+2-C Programlama Dili
+
+orta seviyeli ve yapısal bir programlama dilidir.
+
+her alanda kullanılmaktadır
+
+güçlü ve esnek bir dildir
+
+I- veri türleri
+
+char = tek bir karakter veya küçük tamsayı için kullanılır. 1 byte yer kaplar.
+
+short int = kısa tam sayılar için kullanılır. 2 byte yer kaplar.
+
+int = tam sayılar için kullanılır. 4 byte yer kaplar.
+
+long int = uzun tam sayılar için kullanılır. 8 byte yer kaplar.
+
+float = tek duyarla gerçel sayılar için kullanılır (7 basamak). 4 byte yer kaplar.
+
+double = çift duyarlı gerçel sayılar için kullanılır(15 basamak). 8 byte yer kaplar.
+
+Her veri türünün bir format belirleyicisi vardır. Belleğe yazılmasını istediğimiz bir değeri girmemiz için format belirleyicisi ile birlikte değeri tanımlamamız gerekir.
+
+Örnek: 
+
+Char----> %c ve %s tek bir harf belirlemek için "%c" kelimeler belirlemek için "%s" kullanılırız.
+
+int----> %d
+
+float----> %f
+
+double----> %lf
+
+
+3- Değişkenler
+
+değişkenler bilgisayarın geçiçi belleğinde bilginin saklandığı gözlere verilen sembolik adlardır.
+
+c programında bir değşiken tanımlandığında o değişken için ayrılan bir bellekte alan vardır. her değişkenin nasıl bir veri olduğunu gösteren de bir veri tipi vardır.
+
+ÖRNEK: 
+
+int toplam; örneğindeki "int" bir veri tipini belirtirken "toplam" kavramı ise veri tipine tanımladığımız ismi belirtir.
+
+bir char veri tipi belirteceğimizde belirtmek isetdiğimiz veri tipinin uzunluğunu da gireriz.
+
+ÖRNEK:
+
+char ad[20] bu örnekte "char" veri tipini belirtirken "ad" ise veri tipine verdiğimiz ismi belirtir. "[20]" ise veri tipinin uzunluğunu belirtir.
+
+4- Operatörler
+
+I-Aritmetik operatörler
+
++ = toplama belirtir 
+
+- = çıkarma belirtir.
+
+* = çarpma belirtir.
+
+/ = bölme belirtir.
+
+% = artık bölme yani iki sayının bölümünden kalanı belirtmek için kullanılır.
+
+II- Atama operatörleri
+
+= = atama operatörüdür.
+
++= = ekleyerek atama yapar.
+
+-= = eksilterek atama yapar.
+
+*= = çarparak atama yapar.
+
+/= = bölerek atama yapar.
+
+%= = bölüp, kalanını atama.
+
+++ = bir bir arttırma.
+
+x++ veya ++x = bir bir arttırma
+
+--x veya x-- = bir bir azaltma.
+
+III- Karşılaştırma operatörleri
+
+> = büyüktür 
+
+< = küçüktür
+
+== eşittir
+
+>= büyük-eşittir
+
+<= küçük-eşittir
+
+!= eşit değiş
+
+&& mantıksal ve 
+
+|| mantıksal veya 
+
+5- STANDART GİRİŞ/ ÇIKIŞ FONKSİYONLARI
+
+printf(); ----> Puts();
+
+Scanf(); ----> Gets();
+
+I- Printf fonksiyonu 
+
+değişkenlerin tutttuğu değerleri, onların adreslerini veya bir mesajı ekrana yazdırmak için kullanılır.
+
+3 şekilde kullanılabilir.
+
+a- düz metin: yazdırılmak istenilen ileti.
+
+ÖRNEK : 
+
+printf("hello world");
+
+ekran çıktısı--->  hello world
+
+b- kontrol karakterleri ile kullanım: değişkenlerin ve sabitlerin yazilacağını belirtmek için kullanılır. Örneğin bir satır alta geçme, satır başı yapma, bir tab boşluk bırakma gibi.
+
+ÖRNEK:
+
+printf("ilk satır\n ikinci satır");
+
+çıktısı---> ilk satır
+            ikinci satır
+
+kontrol karakterleri;
+
+\a : ses üretir (alert)
+\b : imleci bir sola kaydırır.
+\f : sayfa atla, bir sonraki sayfaya geç.
+\n : bir alt satıra geç (newline).
+\r : satır başı yap( carrige return).
+\t : yatay TAB (horizontal TAB).
+\v : dikey TAB (vertical TAB).
+\" : çüft tırnak karakterini ekrana yaz.
+\' : tek tırnak karakterini ekrana yaz.
+\\ : \ karakterini ekrana yaz.
+%% : % karakterini ekrana yaz.
+
+c- tip belirleyici: % işareti ile başlar. Ekrana yazdırılmak istenen değişken tipi, % işaretinden sonra kullanılır.
+
+Tip Karakterleri;
+
+%c : tek bir karakter -----> char
+
+ÖRNEK: 
+
+char ad[20] = "Hilal Çınar";
+
+printf("Adınız %s", ad);
+
+%s : karakter dizisi(string) -----> char
+
+%d : işaretleri ondalık tamsayı ----> int,short
+
+%ld : uzun işaretli ondalık tamsayı ----> lomg
+
+%u : işaretsiz ondalık tamsayı -----> unsigned int, unsigned short
+
+%lu : işaretsiz uzun tamsayı ----> unsigned long
+
+%f : gerçel sayı ----> float
+
+!ÖNEMLİ : float tanımladığımız bir değeri yazdırırken virgülden sonraki kaç sayının çıktı veirleceğini belirlemek için ("%.2f") şeklinde ifade edebilir. Bu bize virgülden sonraki 2 sayıyı yazdıracaktır.
+
+%lf : çift duyarlı gerçel sayı ----> double
+
+II- PUTS FONKSİYONU 
+
+printf fonksiyonun aksine puts fonksiyonu bile çıktı aldığımızda imleç çıktı sonunda değil bir satır aşşağıda bekler.
+
+puts fonksiyonunda tip karakterleri kullanılmaz, sadece istenilen mesaj verilebilir bunun yanısıra kontrol karakterleri kullanılabilmektedir.
+
+III-SCANF fonksiyonu: klavyeden veri okumak için kullanılan fonksiyondur.
+
+KULLANIMI:
+
+scanf("%tip belirleyici",&değişken adı);
+
+ÖRNEK:
+
+klavyeden bir x tamsayısı okutmak için;
+
+scanf(%d,&x); şeklinde ilk başta değer almak istediğimiz değişkenin türünü tanımlıyoruz daha sonrasında ise , ekleyip istediğimiz değişkenin adını giriyoruz.
+
+IIII- GETS FONKSİYONU 
+
+gets fonksiyonunda veri tipini tanımlamamıza gerek yoktur, çünkü sadece string veri türünü hafızasında tutabilir.
+
+6- BAŞLIK DOSYALARI :
+
+c dilinde bir program yazılırken, başlık dosyası olarka adlandırılan bir takım dosyalar #include önişlemcisi kullanılarak program içinde dahil edilir. c kütüphanesinde bulunan birçok fonksiyoni, başlık dosyaları içindeki bazı bildirimleri kullanır.
+
+7-PROGRAM YAZMA AŞAMASI:
+
+yazacağımız programlarımızı int main() {"bu kısma"} yazıyoruz.
+
+!!! : tek bir satırı yorum satırı haline getirmek için "//" ifadesini kullanabiliriz, istediğimiz daha fazla satırı yorum satırı haline getirmek için de " /* yorum satırı yapacağımız satırlar /* " ifadesi şeklinde kullanabiliriz.
+
+
+
+
+
