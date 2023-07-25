@@ -1,0 +1,51 @@
+örnek-1 = "MertKıydan" çıktısının yalnızca k harfini ekrana yazdır.
+
+ÇÖZÜM : 
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main(int argc, char *argv[]) {
+	
+
+	
+	char isim[15] = "Mert Kıydan";
+	
+	printf("%c",isim[5]);
+
+	return 0;
+}
+
+örnek-2 = kullanıcıdan ismini, yaşını ve boyunu alıp bu bilgileri ekrana yazdırın.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main(int argc, char *argv[]) {
+	
+char isim[10] ;
+
+int yas;
+
+float boy;
+
+printf("isminizi giriniz : ");
+
+scanf("%s",&isim);
+
+printf("yasinizi giriniz : ");
+
+scanf("%d",&yas);
+
+printf("boyunuzu giriniz : ");
+
+scanf ("%f",&boy);
+
+printf("isminiz : %s\n yasiniz %d\n boyunuz da %f.2",isim,yas,boy);
+
+	return 0;
+}
+
