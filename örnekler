@@ -184,5 +184,75 @@ int main() {
 
 }
 
+örnek-10 kullanıcının not ortalamasını hesaplayan bir program yazınız .
+
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+
+
+int main() 
+{
+	int vize,final;
+	float ortalama;
+	
+	printf("lutfen vize notunuzu giriniz : ");
+	scanf("%d",&vize);
+	
+	printf("lutfen final notunuzu giriniz : ");
+	scanf("%d",&final);
+	
+	ortalama = ((vize*40)/100) +((final*60)/100);
+	
+	if (ortalama < 50)
+	{
+		printf("kaldiniz :( ortalamaniz %.2f",ortalama);
+	}
+	else 
+	{
+		printf("gectiniz tebrikler!!! :) ortalamaniz %.2f",ortalama);
+	}
+}
+
+örnek-11 kullanıcının not ortalamasını harf notu ile birlikte veren bir program oluşturun.
+
+#include <stdio.h>
+
+int main() {
+    int vize, final;
+    float ortalama;
+
+    printf("Lutfen vize notunuzu giriniz: ");
+    if (scanf("%d", &vize) != 1) {
+        printf("Lutfen gecerli bir not giriniz!\n");
+        return 1; // Programı sonlandırır.
+    }
+
+    printf("Lutfen final notunuzu giriniz: ");
+    if (scanf("%d", &final) != 1) {
+        printf("Lutfen gecerli bir not giriniz!\n");
+        return 1; // Programı sonlandırır.
+    }
+
+    ortalama = ((vize * 40) / 100) + ((final * 60) / 100);
+
+    if (ortalama >= 90 && ortalama <= 100) {
+        printf("Harf notunuz AA\nOrtalamaniz %.2f'dir\n", ortalama);
+    } else if (ortalama >= 70 && ortalama < 90) {
+        printf("Harf notunuz BB\nOrtalamaniz %.2f'dir\n", ortalama);
+    } else if (ortalama >= 50 && ortalama < 70) {
+        printf("Harf notunuz CC\nOrtalamaniz %.2f'dir\n", ortalama);
+    } else if (ortalama >= 30 && ortalama < 50) {
+        printf("Harf notunuz DD\nOrtalamaniz %.2f'dir\n", ortalama);
+    } else if (ortalama >= 0 && ortalama < 30) {
+        printf("Harf notunuz FF\nOrtalamaniz %.2f'dir\n", ortalama);
+    } else {
+        printf("Lutfen gecerli bir not giriniz!\n");
+    }
+
+    return 0;
+}
+
+
 
 
