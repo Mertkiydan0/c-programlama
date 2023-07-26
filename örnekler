@@ -160,5 +160,29 @@ int main() {
 	return 0;
 }
 
+örnek-9 = kullanıcıdan aldığın değerlerin hipotenüsünü bulma
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+
+int main() {
+	
+	int a,b;
+	float hipotenus;
+	
+	printf("a degerini giriniz : ");
+	scanf("%d",&a);
+	
+	printf("b degerini giriniz : ");
+	scanf("%d",&b);
+	
+	hipotenus =sqrt( (a*a)+ (b*b));
+	
+	printf("girdiginiz degerin hipotenusu : %.2f",hipotenus);
+
+}
+
 
 
