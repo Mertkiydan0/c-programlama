@@ -1,4 +1,4 @@
-örnek-1 = "MertKıydan" çıktısının yalnızca k harfini ekrana yazdır.
+ örnek-1 = "MertKıydan" çıktısının yalnızca k harfini ekrana yazdır.
 
 ÇÖZÜM : 
 #include <stdio.h>
@@ -135,6 +135,30 @@ int main(int argc, char *argv[]) {
 }
 
 örnek-8 = kullanıcıdan isteyeceğiniz iki sayıyı toplayınız
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	
+	int sayi1,sayi2;
+	
+	int toplam;
+	
+	printf("ilk sayiyi giriniz : ",sayi1);
+	
+	scanf("%d",&sayi1);
+	
+	printf("ikinci sayiyi giriniz : ",sayi2);
+	
+	scanf("%d",&sayi2);
+	
+	toplam = sayi1+sayi2;
+	
+	printf("girdiginiz sayilarin toplami : %d ",toplam);
+	
+	return 0;
+}
 
 
 
