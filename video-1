@@ -212,6 +212,58 @@ yazacağımız programlarımızı int main() {"bu kısma"} yazıyoruz.
 
 !!! : tek bir satırı yorum satırı haline getirmek için "//" ifadesini kullanabiliriz, istediğimiz daha fazla satırı yorum satırı haline getirmek için de " /* yorum satırı yapacağımız satırlar /* " ifadesi şeklinde kullanabiliriz.
 
+7-MATH KÜTÜPHANESİ:
+
+int abs(x) : x tamsayısının mutlak değerini hesaplar.
+
+ÖRNEK :
+
+printf(" -10un mutlak degeri : %d",abs(-10));
+
+double fabs(x) : x gerçel sayısının mutlak değerini hesaplar.
+
+ÖRNEK:
+
+printf(" -10.9'un mutlak degeri : %.1f",fabs(-10.9));
+
+double sqrt(x) : x sayısının karekökünü hesaplar.
+
+ÖRNEK:
+
+printf(" 25'in karekoku : %.1lf",sqrt(25));
+
+double pow(x,y) : x^y değerlerini hesaplar.
+
+ÖRNEK:
+
+int sayi1,ust;
+double sonuc;
+	
+printf("ust almak istediginiz degeri giriniz ");
+	
+scanf("%d",&sayi1);
+	
+printf("ustu olmasını itediginiz sayiyi giriniz ");
+	
+scanf("%d",&ust);
+	
+sonuc = pow(sayi1,ust);
+	
+printf("girdiginiz degerlerin sonucu =%lf ",sonuc);
+
+
+double long() : pozitif x sayısının doğal algoritmasını hesaplar,ln(x).
+
+ÖRNEK:
+
+printf("log 1 degeri : %.2lf",log(1));
+
+double log10() : pozitif x sayısının 10 tabanındaki algoritmasını hesaplar.
+
+ÖRNEK:
+
+printf("log 10'un 10 tabaninda degeri : %.2lf", log10(10));
+
 
 
 
