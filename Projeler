@@ -45,3 +45,50 @@ int main() {
 	return 0;
 }
 
+proje-2 her çalışanın belirli bir maaşı vardır, bunun yanısıra ürettiği her 1-10 ürün arası 5 tl fazladan ücret, 11-20 ile ürün ürettiyse 10 tl, 21-30 arasında ürün üretiyorsa 15 tl fazladan maaş alacaktır.
+
+#include <stdio.h>
+
+int main() {
+    
+    int maas,urun;
+    
+    printf("sevgili calisan lutfen maasinizi giriniz : ");
+    if (scanf("%d",&maas) !=1)
+	{
+		printf("lutfen gecerli bir maas giriniz !!!");
+	return 1;
+	}
+    
+    printf("sevgili calisan lutfen urettiginiz urun sayisini giriniz : ");
+    
+    if (scanf("%d",&urun) !=1)
+    {
+    	printf("lutfen gecerli bir urun adedei giriniz!!!");
+	
+	return 1;
+	}
+    
+    if(urun<11 && urun>0)
+    {
+    	maas = maas + 5 ;
+    	
+    	printf("yeni geliriniz %d tldir",maas);
+	}
+	else if(urun<21 && urun>10)
+	{
+		maas = maas + 10 ;
+		
+		printf("yeni geliriniz %d tldir",maas);
+	}
+    else if(urun<31 && urun>20)
+    {
+    	maas = maas + 15 ;
+    	printf("yeni geliriniz %d tldir",maas);
+	}
+   
+    return 0;
+}
+
+
+
