@@ -271,6 +271,15 @@ I- IF mantığı:
 
 içerdiği koşulların olması durumda altındaki fonksiyonları aktif eden bir sorgulama birimidir.
 
+!!!RETURN KOMUTU:
+
+"return 0;" komutu programın başarılı bir şekilde çalıştığını ve program bittiğinde kapatılacağını belirtir.
+
+"return 1;" komutu ise programın başarı ile çalışmadığını bir hata aldığını o yüzden kapatılacağını belirtir bunu koşul ifadelerinde kulanabiliriz.
+
+!!! OLUMSUZ DEĞER BELİRLEMEK İÇİN if (scanf("%d", &vize) != 1) ÖRNEĞİNİNDE OLDUĞU GİBİ "!=1" DEĞERİ KULLANABİLİRİZ BU KULLANICIDAN ALDIĞIMIZ DEĞERİ O DEĞİŞKENİ TANIMLADIĞIMIZ TÜRDE GİRİP GİRMEDİĞİNİ KONTROL EDER.
+EĞER (scanf("%d", &vize) =1) DESEYDİK DEĞİŞKENİN İSTEDİĞİMİZ TÜRDE VERİLDİĞİNİ YANİ SCANF FONKSİYONUNUN DOĞRU ÇALIŞTIĞINI BELİRTİR.
+BUNU DA SORGULAMA FONKSİYONLARINDA KULLANABİLİRİZ.
 
 
 
