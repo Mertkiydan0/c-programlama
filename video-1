@@ -212,7 +212,7 @@ yazacağımız programlarımızı int main() {"bu kısma"} yazıyoruz.
 
 !!! : tek bir satırı yorum satırı haline getirmek için "//" ifadesini kullanabiliriz, istediğimiz daha fazla satırı yorum satırı haline getirmek için de " /* yorum satırı yapacağımız satırlar /* " ifadesi şeklinde kullanabiliriz.
 
-7-MATH KÜTÜPHANESİ:
+8-MATH KÜTÜPHANESİ:
 
 int abs(x) : x tamsayısının mutlak değerini hesaplar.
 
@@ -263,6 +263,9 @@ double log10() : pozitif x sayısının 10 tabanındaki algoritmasını hesaplar
 ÖRNEK:
 
 printf("log 10'un 10 tabaninda degeri : %.2lf", log10(10));
+
+9-KOŞULLU İFADELER : 
+I- IF mantığı:
 
 
 
