@@ -1,0 +1,47 @@
+proje-1 : HESAP MAKİNESİ 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+
+
+int main() {
+	
+	int sayi1,sayi2,islem,sonuc;
+	
+	printf("Lutfen ilk sayiyi giriniz");
+	scanf("%d",&sayi1);
+	
+	printf("Lutfen ikinci sayiyiyi giriniz :");
+	scanf("%d",&sayi2);
+	
+	printf("Lütfen uygulamak istediginiz islemi seciniz :\n toplama icin 1'e basiniz.\n cikarma icin 2'ye basiniz.\n bolme icin 3'e basiniz.\n carpma icin 4'e basiniz.");
+	scanf("%d",&islem);
+	
+	if(islem == 1)
+	
+	{
+		sonuc = sayi1+sayi2;
+	}
+	
+	else if(islem == 2)
+	
+	{
+		sonuc = sayi1-sayi2;
+	}
+	
+	else if(islem == 3)
+	
+	{
+		sonuc = sayi1/sayi2;
+	}
+	
+	else if (islem ==4)
+	{
+		sonuc = sayi1*sayi2;
+	}
+	
+	printf("girdiginiz degerler ve sectiginiz islemin sonucu = %d",sonuc);
+	return 0;
+}
+
