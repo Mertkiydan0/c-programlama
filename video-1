@@ -192,6 +192,8 @@ KULLANIMI:
 
 scanf("%tip belirleyici",&değişken adı);
 
+!!!EĞER KULLANICIDAN TEK BİR SATIRDA İKİ DEĞER BİRDEN İSTEYECEKSEK scanf("%d%d",&deger1,%deger2); ŞEKLİNDE İSTEYEBİLİRİZ.
+
 ÖRNEK:
 
 klavyeden bir x tamsayısı okutmak için;
@@ -266,6 +268,8 @@ printf("log 10'un 10 tabaninda degeri : %.2lf", log10(10));
 
 9-KOŞULLU İFADELER : 
 I- IF mantığı:
+
+içerdiği koşulların olması durumda altındaki fonksiyonları aktif eden bir sorgulama birimidir.
 
 
 
