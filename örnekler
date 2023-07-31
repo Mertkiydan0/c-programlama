@@ -253,6 +253,53 @@ int main() {
     return 0;
 }
 
+örnek-12 switch case yöntemi ile hesap makinesi yapma:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	
+	
+int sayi1,sayi2,sonuc;
+char islem;
+
+printf("ilk girilecek sayiyi belirleyiniz : ");
+scanf("%d",&sayi1);
+getchar();
+printf("ikinci girilecek sayiyi belirleyiniz : ");
+scanf("%d",&sayi2);
+getchar();
+tekrar :printf("yapmak istediginiz islemi seciniz :");
+scanf("%c",&islem);
+
+switch(islem)
+{
+	
+	case '+' : sonuc = sayi1+sayi2;
+			   printf("isleminizin cevabi %d'dir",sonuc); break;
+			   
+	case '-' : sonuc = sayi1-sayi2;
+			   printf("isleminizin cevabi %d'dir",sonuc); break;		   
+	
+	case '*' : sonuc = sayi1*sayi2;
+			   printf("isleminizin cevabi %d'dir",sonuc); break;
+			   
+     case '/':
+            if (sayi2 == 0) {
+                printf("Bolme isleminde ikinci sayi sifir olamaz.\n");
+                return 1;
+            }
+            sonuc = sayi1 / sayi2;
+            printf("isleminizin cevabi %d'dir\n", sonuc);
+            break;		   
+	
+	default :  printf("lüufen gecerli bir islem giriniz!!!");goto tekrar;
+}
+
+}
+
 
 
 
