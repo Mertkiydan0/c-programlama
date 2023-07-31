@@ -281,6 +281,9 @@ içerdiği koşulların olması durumda altındaki fonksiyonları aktif eden bir
 EĞER (scanf("%d", &vize) =1) DESEYDİK DEĞİŞKENİN İSTEDİĞİMİZ TÜRDE VERİLDİĞİNİ YANİ SCANF FONKSİYONUNUN DOĞRU ÇALIŞTIĞINI BELİRTİR.
 BUNU DA SORGULAMA FONKSİYONLARINDA KULLANABİLİRİZ.
 
+"getchar();" fonksiyonu klavyeden girilen bir değeri tutmaya yarar.
+
+
 
 
 
